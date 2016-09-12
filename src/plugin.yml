@@ -1,0 +1,13 @@
+main: ml.optidevs.archeryattack.Main
+name: ArcheryAttack
+version: 0.1
+prefix: ArcheryAttack
+description: ArcheryAttack
+authors: [DiamondDeveloper, Intriqued]
+website: http://www.optidevs.ml/
+database: false
+
+commands:
+ ArcheryAttack:
+    description: ArcheryAttack
+    aliases: [at]
