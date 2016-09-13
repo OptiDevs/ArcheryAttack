@@ -6,11 +6,11 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -108,5 +108,9 @@ public class Main extends JavaPlugin {
 
 	public File getLangFile() {
 		return LANG_FILE;
+	}
+
+	public static Main gi() {
+		return (Main) Bukkit.getServer().getPluginManager().getPlugin("ArcheryAttack");
 	}
 }
