@@ -15,6 +15,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import ml.optidevs.archeryattack.game.Mechanics;
+import ml.optidevs.archeryattack.general.Commands;
 
 public class Main extends JavaPlugin {
 
@@ -28,6 +29,7 @@ public class Main extends JavaPlugin {
 		loadConfig();
 		getServer().getPluginManager().registerEvents(new Signs(), this);
 		getServer().getPluginManager().registerEvents(new Mechanics(), this);
+		getServer().getPluginCommand("ArrowAttack").setExecutor(new Commands());
 		Logger.sendMessage("[ArcheryAttack] Plugin Enabled " + desc.getVersion());
 	}
 
